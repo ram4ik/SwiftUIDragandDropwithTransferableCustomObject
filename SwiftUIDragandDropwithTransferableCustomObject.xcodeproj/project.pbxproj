@@ -11,6 +11,7 @@
 		5E31ECCA2A6E6E950041FA97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E31ECC92A6E6E950041FA97 /* ContentView.swift */; };
 		5E31ECCC2A6E6E960041FA97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E31ECCB2A6E6E960041FA97 /* Assets.xcassets */; };
 		5E31ECCF2A6E6E960041FA97 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E31ECCE2A6E6E960041FA97 /* Preview Assets.xcassets */; };
+		5E31ECD72A6E73A90041FA97 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 5E31ECD62A6E73A90041FA97 /* Algorithms */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		5E31ECC92A6E6E950041FA97 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5E31ECCB2A6E6E960041FA97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E31ECCE2A6E6E960041FA97 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5E31ECD82A6E7AA50041FA97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E31ECD72A6E73A90041FA97 /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +54,7 @@
 		5E31ECC62A6E6E950041FA97 /* SwiftUIDragandDropwithTransferableCustomObject */ = {
 			isa = PBXGroup;
 			children = (
+				5E31ECD82A6E7AA50041FA97 /* Info.plist */,
 				5E31ECC72A6E6E950041FA97 /* SwiftUIDragandDropwithTransferableCustomObjectApp.swift */,
 				5E31ECC92A6E6E950041FA97 /* ContentView.swift */,
 				5E31ECCB2A6E6E960041FA97 /* Assets.xcassets */,
@@ -83,6 +87,9 @@
 			dependencies = (
 			);
 			name = SwiftUIDragandDropwithTransferableCustomObject;
+			packageProductDependencies = (
+				5E31ECD62A6E73A90041FA97 /* Algorithms */,
+			);
 			productName = SwiftUIDragandDropwithTransferableCustomObject;
 			productReference = 5E31ECC42A6E6E950041FA97 /* SwiftUIDragandDropwithTransferableCustomObject.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +118,9 @@
 				Base,
 			);
 			mainGroup = 5E31ECBB2A6E6E950041FA97;
+			packageReferences = (
+				5E31ECD52A6E73A90041FA97 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
 			productRefGroup = 5E31ECC52A6E6E950041FA97 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -270,6 +280,7 @@
 				DEVELOPMENT_TEAM = L8W86DZDY2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIDragandDropwithTransferableCustomObject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +310,7 @@
 				DEVELOPMENT_TEAM = L8W86DZDY2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIDragandDropwithTransferableCustomObject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +351,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5E31ECD52A6E73A90041FA97 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5E31ECD62A6E73A90041FA97 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E31ECD52A6E73A90041FA97 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5E31ECBC2A6E6E950041FA97 /* Project object */;
 }
